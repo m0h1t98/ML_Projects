@@ -13,3 +13,7 @@
 7. Split Dataset into train test data
 8. Model Building
 9. Model Evaluation
+
+
+## Report and Visualisation -
+  https://github.com/m0h1t98/mlProjects/edit/master/Stock%20Price/report.pdf
