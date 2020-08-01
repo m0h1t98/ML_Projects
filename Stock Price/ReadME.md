@@ -16,4 +16,4 @@
 
 
 ## Report and Visualisation -
-  https://github.com/m0h1t98/mlProjects/edit/master/Stock%20Price/report.pdf
+  https://github.com/m0h1t98/mlProjects/Stock%20Price/Report.pdf
