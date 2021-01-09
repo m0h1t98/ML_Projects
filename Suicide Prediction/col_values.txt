@@ -1,0 +1,69 @@
+gender   sexuallity   friends    age	 income    bodyweight	   virgin	social_fear      employment      depressed    attempt_suicide
+
+
+gender :
+Male                  1
+Female               0
+
+-----------------------------------
+sexuallity :
+Straight              2
+Bisexual            0
+Gay/Lesbian      1
+
+-----------------------------------
+income :
+
+$0                                      -> 0
+$1 to $10,000                    -> 1
+$10,000 to $19,999           -> 2
+$20,000 to $29,999          - > 7
+$30,000 to $39,999          - > 9   
+$50,000 to $74,999          - > 11
+$40,000 to $49,999          - > 10
+$75,000 to $99,999          - > 12
+$125,000 to $149,999      - > 4
+$100,000 to $124,999     - >  3
+$150,000 to $174,999     - >  5
+$200,000 or more            - >  8
+$174,999 to $199,999     - >  6
+
+-----------------------------------
+bodyweight :
+Normal weight             - > 0
+Overweight       	- > 2
+Underweight       	- > 3
+Obese             	- >  1
+
+-----------------------------------
+virgin :
+Yes    		- > 1
+No    		- > 0
+
+-----------------------------------
+social_fear :
+Yes    		- > 1
+No    		- > 0     
+
+-----------------------------------
+depressed :
+Yes    		- > 1
+No    		- > 0  
+
+-----------------------------------
+employment :
+A student                                         		- >	1
+Employed for wages                                		- >	2
+Out of work but not currently looking for work	- >     	5
+Out of work and looking for work                   		- >	4
+Self-employed                                      		- >	7
+Unable to work                                    		- >	8
+Military                                           		- >	3
+Retired                                             		- >	6
+A homemaker                                   		- >	0
+
+-----------------------------------
+attempt_suicide :
+
+Yes    		- > 1
+No    		- > 0  

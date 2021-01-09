@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suicide Prediction</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div>
+        <form action="{{ url_for('predict')}}" method="post">
+			<h2 class="head">Suicide Prediction</h2>
+			
+			<label class="head_lb">Gender</label>
+			<select name="gender" id="gender" required="required" class='select_op'>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select><br>
+
+			<label class="head_lb">Sexuallity</label>
+			<select name="sexuallity" id="sexuallity" required="required" class='select_op'>
+                <option value="0">Bisexual</option>
+				<option value="1">Gay/Lesbian </option>
+				<option value="2">Straight</option>
+            </select><br>
+
+            <label class="head_lb">Friends</label>
+			<input id="friends" name="friends" type="number" class="input_sec"><br>
+			
+			<label class="head_lb">Age</label>
+			<input id="age" name="age" type="number" class="input_sec"><br>
+
+			<label class="head_lb">Income</label>
+			<select name="income" id="income" required="required" class='select_op'>
+                <option value="0">$0</option>
+				<option value="1">$1 to $10,000</option>
+				<option value="2">$10,000 to $19,999</option>
+				<option value="7">$20,000 to $29,999</option>
+				<option value="9">$30,000 to $39,999 </option>
+				<option value="10">$40,000 to $49,999 </option>
+				<option value="11">$50,000 to $74,999</option>
+				<option value="12">$75,000 to $99,999 </option>
+				<option value="4">$125,000 to $149,999</option>
+				<option value="3">$100,000 to $124,999 </option>
+				<option value="5">$150,000 to $174,999</option>
+				<option value="6">$174,999 to $199,999</option>
+				<option value="8">$200,000 or more</option>
+			</select><br>
+			
+			<label class="head_lb">Body Weight</label>
+			<select name="bodyweight" id="bodyweight" required="required" class='select_op'>
+                <option value="0">Normal weight</option>
+				<option value="1">Obese </option>
+				<option value="2">Overweight</option>
+				<option value="3">Underweight</option>
+			</select><br>
+			
+			<label class="head_lb">Virgin</label>
+			<select name="virgin" id="virgin" required="required" class='select_op'>
+                <option value="1">Yes</option>
+				<option value="0">No </option>
+			</select><br>
+			
+			<label class="head_lb">Social Fear</label>
+			<select name="social_fear" id="social_fear" required="required" class='select_op'>
+                <option value="1">Yes</option>
+				<option value="0">No </option>
+			</select><br>
+
+			
+			<label class="head_lb">Depressed </label>
+			<select name="depressed" id="depressed" required="required" class='select_op'>
+                <option value="1">Yes</option>
+				<option value="0">No </option>
+			</select><br>
+
+			<label class="head_lb">Employment</label>
+			<select name="employment" id="employment" required="required" class='select_op'>
+                <option value="0">Homemaker </option>
+				<option value="1">Student</option>
+				<option value="2">Employed for wages</option>
+				<option value="3">Military</option>
+				<option value="4">Out of work and looking for work </option>
+				<option value="5">Out of work but not currently looking for work</option>
+				<option value="6">Retired</option>
+				<option value="7">Self-employed</option>
+				<option value="8">Unable to work</option>
+			</select><br>
+			
+            <button id="sub" type="submit">Predict</button><br>
+		</form>
+
+		<br><h3 class="outpur">{{ prediction_text }}</h3>
+	</div>
+	
+</body>	
+</html>
