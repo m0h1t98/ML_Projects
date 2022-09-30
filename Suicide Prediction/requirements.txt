@@ -1,4 +1,4 @@
-joblib==0.15.1
+joblib==1.2.0
 jsonify==0.5
 Flask
 gunicorn
